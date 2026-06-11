@@ -1,0 +1,82 @@
+{
+  "gallery": [
+    {
+      "image": "OT.jpg",
+      "title": "Advanced Operation Theatre",
+      "category": "Hospital Infrastructure",
+      "type": "Operation Theatre",
+      "description": "Our modern operation theatre is designed to support safe, efficient, and high-quality surgical procedures. Equipped with an adjustable operating table, advanced surgical lighting, anesthesia support systems, oxygen supply, patient monitoring equipment, and sterile instrument storage, the facility ensures a controlled and hygienic environment. The theatre is maintained to the highest standards of cleanliness and infection control, enabling surgeons and medical staff to deliver precise and effective care. With well-organized medical equipment and a patient-focused setup, the operation theatre is prepared to handle a wide range of surgical and emergency procedures.",
+      "features": [
+        "Adjustable Operating Table",
+        "Ceiling-Mounted Surgical Light",
+        "Anesthesia Equipment",
+        "Patient Monitoring System",
+        "Oxygen Supply",
+        "Suction System",
+        "Sterile Instrument Storage",
+        "Air-Conditioned Environment"
+      ],
+      "keywords": [
+        "operation theatre",
+        "surgery",
+        "hospital",
+        "medical equipment",
+        "patient care",
+        "sterile environment",
+        "surgical room",
+        "healthcare"
+      ]
+    },
+    {
+      "image": "room.jpg",
+      "title": "Comfortable Inpatient & Recovery Care",
+      "category": "Patient Care Facilities",
+      "type": "Patient Room",
+      "description": "Our patient rooms are thoughtfully designed to provide a peaceful, hygienic, and comfortable environment for recovery. Each room is equipped with a well-maintained hospital bed, oxygen support facilities, air conditioning, and essential medical infrastructure to ensure quality patient care. Spacious interiors and natural lighting create a calm atmosphere that promotes healing and well-being. Dedicated space for attendants allows family members to stay close and support their loved ones during treatment. The room combines medical functionality with patient comfort, ensuring a safe and reassuring healthcare experience throughout the recovery journey.",
+      "features": [
+        "Single Patient Bed",
+        "Oxygen Support Point",
+        "IV Stand",
+        "Air Conditioning",
+        "Attendant Seating",
+        "Bedside Table",
+        "Natural Ventilation",
+        "Comfortable Recovery Environment"
+      ],
+      "keywords": [
+        "patient room",
+        "hospital room",
+        "recovery room",
+        "inpatient care",
+        "medical care",
+        "hospital facilities",
+        "patient comfort",
+        "healthcare"
+      ]
+    },
+    {
+      "image": "Madam_Img.jpg",
+      "title": "Experienced Healthcare Specialist",
+      "category": "Medical Team",
+      "type": "Doctor Profile",
+      "description": "Our dedicated healthcare professional is committed to providing compassionate, patient-centered care with a focus on accurate diagnosis, effective treatment, and overall well-being. With extensive clinical experience and a commitment to excellence, she works closely with patients to ensure personalized medical attention and the highest standards of healthcare service.",
+      "features": [
+        "Patient-Centered Care",
+        "Clinical Expertise",
+        "Professional Consultation",
+        "Compassionate Treatment",
+        "Personalized Healthcare",
+        "Evidence-Based Medical Practice"
+      ],
+      "keywords": [
+        "doctor",
+        "specialist",
+        "healthcare",
+        "medical consultation",
+        "patient care",
+        "hospital team",
+        "medical expert"
+      ]
+    }
+  ]
+}
