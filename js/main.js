@@ -164,6 +164,11 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================== */
   
   // Preloader Logic
+  
+  // Speed up preloader video
+  const preloaderVideos = document.querySelectorAll('.preloader-video');
+  preloaderVideos.forEach(v => v.playbackRate = 2.0); // 2x speed
+  
   const preloader = document.getElementById('preloader');
   if (preloader) {
     window.addEventListener('load', () => {
