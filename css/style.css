@@ -6087,3 +6087,40 @@ body:not(.home) .header:not(.header-scrolled) .hamburger-bar {
 .quick-actions {
   margin-top: -35px !important;
 }
+
+/* ==========================================================================
+   WORD-BY-WORD TITLE ANIMATION
+   ========================================================================== */
+.cinematic-word-wrap {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  /* padding to prevent cutting off descending letters like 'p' or 'g' */
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+}
+
+.cinematic-word-inner {
+  display: inline-block;
+  transform: translateY(115%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.title-animated.is-revealed .cinematic-word-inner {
+  transform: translateY(0);
+}
+
+/* Ensure no weird line-height clipping on h1/h2 */
+.title-animated {
+  overflow: hidden; /* Sometimes needed, but usually wrap is enough */
+  overflow: visible; /* Better to keep visible so ascenders aren't cut */
+}
+
+/* Fix for transparent/gradient text clipping inside animated inner spans */
+.hero-v2__title-accent .cinematic-word-inner {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
