@@ -5409,7 +5409,7 @@ select:focus-visible {
 /* 1. Custom Cursor */
 @media (min-width: 1024px) {
   body, a, button, .fab, .nav-link, .btn {
-    cursor: url('../images/syringe-cursor.svg') 4 20, auto !important;
+    cursor: url('../images/syringe-cursor.svg') 2 2, auto !important;
   }
 }
 
