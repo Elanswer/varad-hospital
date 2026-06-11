@@ -37,35 +37,35 @@
 
 :root {
   /* ---- Colors ---- */
-  --color-primary:        #1D6FB8;
-  --color-primary-dark:   #165a96;
-  --color-primary-light:  #EAF6FF;
-  --color-secondary:      #1FA15B;
-  --color-secondary-dark: #18844a;
-  --color-accent:         #2CB7A5;
-  --color-bg:             #F7FAFC;
+  --color-primary:        #0A2540;
+  --color-primary-dark:   #051120;
+  --color-primary-light:  #F0F3F5;
+  --color-secondary:      #2E5C55;
+  --color-secondary-dark: #1E403B;
+  --color-accent:         #1C886F;
+  --color-bg:             #FDFBF7;
   --color-white:          #FFFFFF;
-  --color-text:           #0F172A;
-  --color-text-secondary: #475569;
+  --color-text:           #151A20;
+  --color-text-secondary: #4A5560;
   --color-text-light:     #94A3B8;
-  --color-border:         #D8E2EA;
-  --color-highlight:      #EAF6FF;
+  --color-border:         #E5E3DB;
+  --color-highlight:      #F4EFEB;
   --color-emergency:      #E53935;
   --color-emergency-dark: #C62828;
 
   /* ---- Typography ---- */
   --font-heading: 'Playfair Display', serif;
-  --font-body:    'Inter', sans-serif;
+  --font-body:    'Plus Jakarta Sans', sans-serif;
 
   /* ---- Shadows ---- */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 4px 20px rgba(10, 37, 64, 0.04);
+  --shadow-md: 0 10px 30px rgba(10, 37, 64, 0.06);
+  --shadow-lg: 0 20px 40px rgba(10, 37, 64, 0.08);
 
   /* ---- Radii ---- */
   --radius-sm:   8px;
-  --radius-md:   12px;
-  --radius-lg:   16px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
   --radius-full: 9999px;
 
   /* ---- Motion ---- */
@@ -83,7 +83,7 @@
    2. GOOGLE FONTS
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 
 /* ==========================================================================
@@ -5576,4 +5576,94 @@ h1, h2, h3, .section-title {
     font-size: 14px !important;
     padding: 8px 12px !important;
   }
+}
+
+
+/* ==========================================================================
+   BOUTIQUE CLINIC: Premium Typography, Layout & Micro-Interactions
+   ========================================================================== */
+
+/* 1. Elegant Typography */
+body {
+  line-height: 1.7; /* Much more readable and luxurious */
+  color: var(--color-text);
+}
+
+.section-label, .tag, .service-subtitle {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+h1, .hero__title, .hero-v2__title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+h2, .section-title {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* 2. Expansive Layout Spacing */
+.section {
+  padding: 120px 0; /* Huge breathing room */
+}
+@media (min-width: 1024px) {
+  .section { padding: 160px 0; }
+}
+
+/* 3. Delicate Card Styles */
+.card, .service-card, .dept-card, .doctor-card, .premium-doc-card {
+  border: 1px solid rgba(10, 37, 64, 0.05); /* Extremely delicate border */
+  box-shadow: none; /* Removed heavy shadows by default */
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover, .service-card:hover, .dept-card:hover, .doctor-card:hover, .premium-doc-card:hover {
+  box-shadow: var(--shadow-lg); /* Soft bloom on hover */
+  transform: translateY(-5px);
+}
+
+/* 4. Silky Micro-Interactions (CSS Only) */
+/* Smooth Image Scale on Hover (used in About/Hero cards if applicable) */
+.about-image-collage .img-back,
+.about-image-collage .img-front {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.about-image-collage:hover .img-back {
+  transform: scale(1.03) translate(-10px, -10px);
+}
+.about-image-collage:hover .img-front {
+  transform: scale(1.05) translate(10px, 10px);
+}
+
+/* Elegant Underline Reveal for text links */
+.nav-link, .footer-link {
+  position: relative;
+  text-decoration: none;
+}
+.nav-link::after, .footer-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.nav-link:hover::after, .footer-link:hover::after {
+  width: 100%;
+}
+
+/* 5. Custom Boutique Gradient Overrides */
+.hero-v2__content {
+  background: rgba(253, 251, 247, 0.85) !important; /* Alabaster frost */
+  backdrop-filter: blur(24px) saturate(140%);
+  -webkit-backdrop-filter: blur(24px) saturate(140%);
+  border: 1px solid rgba(10, 37, 64, 0.08);
 }
