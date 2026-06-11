@@ -157,3 +157,37 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll(); // run once on load
 });
+
+
+  /* ==========================================
+     UX POLISH: Preloader & Scroll-to-Top
+     ========================================== */
+  
+  // Preloader Logic
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      // Add slight delay to ensure smooth transition
+      setTimeout(() => {
+        preloader.classList.add('loaded');
+        setTimeout(() => preloader.remove(), 500); // Clean up DOM
+      }, 300);
+    });
+  }
+
+  // Scroll-to-Top Logic
+  const scrollTopBtn = document.getElementById('scroll-to-top');
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
