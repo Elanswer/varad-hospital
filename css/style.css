@@ -5836,7 +5836,7 @@ body:not(.home) .header:not(.header-scrolled) .hamburger-bar {
 .review-header {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 24px !important;
 }
 
 .review-avatar {
@@ -6076,4 +6076,14 @@ body:not(.home) .header:not(.header-scrolled) .hamburger-bar {
 @media (max-width: 768px) {
   .marquee-v-col:nth-child(2) { display: none; }
   .marquee-v-container { height: 300px; }
+}
+
+/* Force gap on quick actions grid */
+.quick-actions-grid {
+  gap: 24px !important;
+}
+
+/* Force quick actions to drop below hero section with a little gap */
+.quick-actions {
+  margin-top: -35px !important;
 }
