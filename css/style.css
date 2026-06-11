@@ -5423,3 +5423,96 @@ select:focus-visible {
 
 /* Make footer logo white */
 .footer-logo img { filter: brightness(0) invert(1); }
+
+
+/* ==========================================================================
+   ULTRA-PREMIUM UI UPGRADES (Cursor, Parallax, Reveal)
+   ========================================================================== */
+
+/* 1. Custom Cursor */
+@media (min-width: 1024px) {
+  /* Hide default cursor on desktop */
+  body, a, button, .fab, .nav-link, .btn {
+    cursor: none !important;
+  }
+}
+
+.custom-cursor-dot,
+.custom-cursor-aura {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  display: none; /* Hidden on mobile */
+}
+
+@media (min-width: 1024px) {
+  .custom-cursor-dot,
+  .custom-cursor-aura {
+    display: block;
+  }
+}
+
+.custom-cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.custom-cursor-aura {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(29, 111, 184, 0.4);
+  background-color: rgba(29, 111, 184, 0.05);
+  transition: width 0.3s ease-out, height 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+}
+
+/* Cursor Hover States */
+.custom-cursor-dot.hovered {
+  width: 0;
+  height: 0;
+}
+.custom-cursor-aura.hovered {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(29, 111, 184, 0.15);
+  border-color: var(--color-primary);
+  backdrop-filter: blur(2px);
+}
+
+/* Magnetic Buttons container fix */
+.magnetic-btn {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 2. Parallax Setup */
+.inner-hero__bg, .hero-v2__bg, .cta-pro__bg {
+  overflow: hidden;
+}
+.inner-hero__bg img, .hero-v2__bg img, .cta-pro__bg img {
+  will-change: transform;
+  transform-origin: center center;
+  scale: 1.15; /* Give room to move without showing edges */
+}
+
+/* 3. Cinematic Text Reveal */
+.cinematic-reveal {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
+.cinematic-reveal-text {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+.cinematic-reveal.is-revealed .cinematic-reveal-text {
+  transform: translateY(0);
+}
+
