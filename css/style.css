@@ -4844,6 +4844,7 @@ body.nav-open {
   .contact-map {
     height: 100%;
     min-height: 600px;
+  }
 }
 
 /* ==========================================================================
@@ -5328,6 +5329,12 @@ body:not(.home) .header.header-scrolled {
   height: 100vh;
   object-fit: cover;
   pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .preloader-video {
+    transform: scale(0.8);
+  }
 }
 
 /* 2. Scroll-to-Top Button */
@@ -6204,4 +6211,356 @@ body:not(.home) .header:not(.header-scrolled) .hamburger-bar {
   margin: 0;
   color: var(--color-text-secondary);
   line-height: 1.7;
+}
+
+
+/* ==========================================================================
+   MOBILE & TABLET RESPONSIVENESS FIXES (Appended to override previous)
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  /* General Layout */
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Hero Section */
+  .hero-v2 {
+    min-height: auto;
+    padding: 60px 0;
+  }
+  .hero-v2__inner {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+  .hero-v2__title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+  .hero-v2__subtitle {
+    margin-bottom: 24px;
+    font-size: 1rem;
+  }
+  .hero-v2__visual {
+    margin-top: 20px;
+  }
+  .hero-v2__image-wrapper {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  
+  /* Hide decorative elements that cause horizontal scroll */
+  .hero-decoration--1, 
+  .hero-decoration--2, 
+  .hero-v2__shape--1, 
+  .hero-v2__shape--2 {
+    display: none !important;
+  }
+
+  /* Quick Actions Grid */
+  .quick-actions {
+    margin-top: 0 !important;
+    padding-bottom: 40px;
+  }
+  .quick-actions-grid {
+    gap: 12px !important;
+  }
+
+  /* About Collage Image */
+  .about-image-collage {
+    height: 380px;
+  }
+  .about-image-collage .img-back {
+    height: 280px;
+    width: 80%;
+  }
+  .about-image-collage .img-front {
+    height: 240px;
+    width: 70%;
+    border-width: 6px;
+  }
+
+  /* Doctor Cards Grid */
+  .doctors-grid-v2 {
+    gap: 16px;
+  }
+  .doc-card {
+    margin-bottom: 0;
+  }
+
+  /* CTA Pro (Digital Front Desk) */
+  .cta-pro {
+    padding: 50px 0;
+  }
+  .cta-pro__inner {
+    gap: 40px;
+  }
+  .cta-pro__title {
+    font-size: clamp(2rem, 7vw, 2.5rem);
+  }
+
+  /* Reviews Margin */
+  .review-card {
+    width: 280px !important;
+    padding: 24px;
+  }
+
+  /* FAQ Inline Override */
+  .faq-section {
+    padding: 60px 0 !important;
+  }
+
+  /* Inner Pages Hero */
+  .inner-hero {
+    min-height: auto;
+    padding: 100px 0 60px;
+  }
+  .inner-hero__glass {
+    padding: 32px 24px;
+    margin: 0 16px;
+    max-width: calc(100% - 32px);
+  }
+  .inner-hero__title {
+    font-size: 2rem;
+  }
+}
+
+/* Extra small mobile adjustments */
+@media (max-width: 479px) {
+  .hero-v2__trust {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .hero-v2__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-v2__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+/* ==========================================================================
+   MOBILE 2-COLUMN GRID FIXES
+   ========================================================================== */
+@media (max-width: 767px) {
+  /* Make all main grid cards 2 columns on mobile */
+  .quick-actions-grid,
+  .services-grid,
+  .departments-grid,
+  .test-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+  
+  /* Compact styling for the cards to fit nicely in 2 columns */
+  .quick-action-card,
+  .service-card,
+  .dept-card,
+  .test-item {
+    padding: 16px 12px !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .service-icon,
+  .dept-icon,
+  .quick-action-card .icon-wrapper {
+    width: 44px !important;
+    height: 44px !important;
+    margin: 0 auto 12px !important;
+  }
+  
+  .service-icon svg,
+  .dept-icon svg,
+  .quick-action-card .icon-wrapper svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  
+  .service-title,
+  .dept-title,
+  .quick-action-card h3 {
+    font-size: 0.85rem !important;
+    margin-bottom: 4px !important;
+  }
+  
+  .service-subtitle,
+  .service-desc,
+  .dept-desc,
+  .quick-action-card p {
+    font-size: 0.7rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .quick-action-link,
+  .service-link,
+  .dept-link {
+    font-size: 0.7rem !important;
+    margin-top: 8px !important;
+  }
+  
+  /* Ensure pathology tags section is compact */
+  .pathology-tags {
+    padding: 16px !important;
+  }
+}
+
+
+/* ==========================================================================
+   HERO MOBILE PADDING & OVERFLOW FIXES
+   ========================================================================== */
+@media (max-width: 767px) {
+  .hero-v2__content {
+    padding: 24px 16px !important;
+    border-radius: 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  .hero-v2__title {
+    font-size: clamp(1.75rem, 6vw, 2.25rem) !important;
+    word-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+  
+  .hero-v2__badge {
+    height: auto !important;
+    padding: 6px 12px !important;
+    text-align: left !important;
+    flex-wrap: wrap !important;
+  }
+}
+
+
+/* ==========================================================================
+   DOCTORS GRID & TEST CATEGORIES MOBILE IMPROVEMENT
+   ========================================================================== */
+@media (max-width: 767px) {
+  /* 1. Doctors Grid - Horizontal Scroll Carousel */
+  .doctors-grid-v2 {
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    gap: 16px !important;
+    padding-bottom: 24px !important;
+    margin-right: -20px !important; /* Negative margin to let it scroll to screen edge */
+    margin-left: -20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Hide scrollbar for cleaner look */
+  }
+  .doctors-grid-v2::-webkit-scrollbar {
+    display: none;
+  }
+  .doctors-grid-v2 .doc-card {
+    min-width: 280px !important;
+    max-width: 280px !important;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+  }
+
+  /* 2. Test Categories - Compact Tag Cloud / Chips */
+  .test-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+  .test-item {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px 16px !important;
+    border-radius: 30px !important; /* Full pill shape */
+    background: rgba(28, 136, 111, 0.04) !important;
+    border: 1px solid rgba(28, 136, 111, 0.15) !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+  }
+  .test-item svg {
+    margin: 0 8px 0 0 !important;
+    width: 16px !important;
+    height: 16px !important;
+    color: var(--color-accent) !important;
+  }
+  .test-item span {
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    color: var(--color-primary-dark) !important;
+    margin: 0 !important;
+  }
+}
+
+/* Fix scroll-to-top overlap on mobile */
+@media (max-width: 767px) {
+  #scroll-to-top {
+    bottom: 24px !important;
+    right: auto !important;
+    left: 20px !important;
+    width: 44px !important;
+    height: 44px !important;
+  }
+}
+
+
+/* ==========================================================================
+   MOBILE STICKY BOTTOM BUTTON
+   ========================================================================== */
+.mobile-sticky-book {
+  display: none;
+}
+@media (max-width: 767px) {
+  .mobile-sticky-book {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-white);
+    padding: 12px 20px;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+    z-index: 998;
+    border-top: 1px solid var(--color-border);
+  }
+  .mobile-sticky-book .btn {
+    border-radius: 12px;
+    height: 48px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    justify-content: center;
+  }
+  
+  /* Push other FABs and scroll to top up so they don't overlap the bar */
+  .fab-container {
+    bottom: 84px !important;
+  }
+  #scroll-to-top {
+    bottom: 84px !important;
+  }
+  
+  /* Prevent content from being hidden behind sticky bar */
+  body {
+    padding-bottom: 72px !important; 
+  }
+  
+  /* Make sure footer doesn't get covered completely at the very end */
+  .footer {
+    padding-bottom: 90px !important;
+  }
 }
