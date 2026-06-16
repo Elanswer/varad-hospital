@@ -86,7 +86,7 @@ Apply the **Rule Categories by Priority** from the main UI/UX Pro Max skill:
 ### Hospital Identity
 
 - **Name:** VARAD HOSPITAL
-- **Email:** varadhospital25@gmail.com
+- **Email:** varadhospitalcare25@gmail.com
 - **Address:** Gat Number 16/12, Rustic Paradise Commercial Wing, Dehu - Moshi Rd, Patilnagar, Chikhali, Pimpri-Chinchwad, Maharashtra 411062
 - **Emergency Contact:** 9552218673
 - **Pathology Contact:** 9623812423

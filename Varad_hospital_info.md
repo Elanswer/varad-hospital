@@ -15,5 +15,5 @@ Hematology Histopathology Biochemistry Microbiology Immunology Molecular Biology
 
 Facilities: 
 cashless & insurances support available, 24/7 Helpline, Home Collection Available Pathology Contact 9623812423 Emergency Contact Numbers: 9552218673
-email: varadhospital25@gmail.com
+email: varadhospitalcare25@gmail.com
 address: Gat Number 16/12, Rustic Paradise Commercial Wing, Dehu - Moshi Rd, Patilnagar, Chikhali, Pimpri-Chinchwad, Maharashtra 411062

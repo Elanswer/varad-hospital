@@ -12,7 +12,7 @@ const siteFooter = templateSrc.substring(footerStart);
 const createPage = (filename, title, content) => {
   // Fix title tag
   let header = siteHeader.replace(/<title>.*?<\/title>/, `<title>${title} | Varad Hospital</title>`);
-  
+
   const pageHtml = `${header}
     <section class="inner-hero" style="min-height: 250px;">
       <div class="inner-hero__bg">
@@ -44,7 +44,7 @@ const privacyContent = `
 <h2>3. How We Use Your Information</h2>
 <p>We process your information for purposes based on legitimate business interests, the fulfillment of our contract with you, compliance with our legal obligations, and/or your consent.</p>
 <h2>4. Contact Us</h2>
-<p>If you have questions or comments about this notice, you may email us at varadhospital25@gmail.com.</p>
+<p>If you have questions or comments about this notice, you may email us at varadhospitalcare25@gmail.com.</p>
 `;
 
 const termsContent = `

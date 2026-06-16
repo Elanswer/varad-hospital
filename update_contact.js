@@ -52,7 +52,7 @@ const newContactSection = `<!-- ==========================================
             </div>
             <h3>Email Address</h3>
             <p>For general inquiries</p>
-            <a href="mailto:varadhospital25@gmail.com">varadhospital25@gmail.com</a>
+            <a href="mailto:varadhospitalcare25@gmail.com">varadhospitalcare25@gmail.com</a>
           </div>
 
           <!-- Address -->

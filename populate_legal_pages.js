@@ -11,7 +11,7 @@ const siteFooter = templateSrc.substring(footerStart);
 
 const createPage = (filename, title, content) => {
   let header = siteHeader.replace(/<title>.*?<\/title>/, `<title>${title} | Varad Hospital</title>`);
-  
+
   const pageHtml = `${header}
     <section class="inner-hero" style="min-height: 250px;">
       <div class="inner-hero__bg">
@@ -72,7 +72,7 @@ const privacyContent = `
     Gat Number 16/12, Rustic Paradise Commercial Wing,<br>
     Dehu - Moshi Rd, Patilnagar, Chikhali,<br>
     Pimpri-Chinchwad, Maharashtra 411062<br>
-    Email: varadhospital25@gmail.com
+    Email: varadhospitalcare25@gmail.com
   </p>
 </div>
 `;
