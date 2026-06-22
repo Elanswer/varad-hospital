@@ -17,7 +17,7 @@ const pagesData = {
   },
   'doctors.html': {
     title: 'Our Doctors | Varad Hospital',
-    desc: 'Meet the expert medical team at Varad Hospital. Our 11+ specialist doctors provide compassionate, top-tier healthcare services in Pimpri-Chinchwad, Pune.'
+    desc: 'Meet the expert medical team at Varad Hospital. Our 12+ specialist doctors provide compassionate, top-tier healthcare services in Pimpri-Chinchwad, Pune.'
   },
   'services.html': {
     title: 'Services | Varad Hospital',

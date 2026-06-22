@@ -22,7 +22,7 @@ const seoData = {
   },
   'doctors.html': {
     title: 'Our Expert Doctors | Varad Hospital Pune',
-    desc: 'Meet our team of 11+ highly qualified specialists and expert doctors at Varad Hospital, Chikhali. Delivering premium healthcare across multiple specialties.'
+    desc: 'Meet our team of 12+ highly qualified specialists and expert doctors at Varad Hospital, Chikhali. Delivering premium healthcare across multiple specialties.'
   },
   'services.html': {
     title: 'Medical Services & Facilities | Varad Hospital',
