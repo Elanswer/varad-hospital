@@ -60,6 +60,29 @@ The following design and development skills are installed in `.gemini/skills/` a
 - **stitch-utilities** — Design docs, prompt enhancement, iterative build loops, taste design
 - **Usage for this project:** Reference `stitch-utilities/skills/taste-design/SKILL.md` for premium design quality standards.
 
+### ✂️ Ponytail (Dietrich Gebert)
+- **Path:** `.gemini/skills/ponytail/` (also mirrored in `.agents/skills/ponytail/`)
+- **Sub-skills:**
+  - `ponytail/SKILL.md` — Core skill: Lazy senior developer mode (YAGNI, platform/native features first, smallest complete diff, zero bloat/over-engineering)
+  - `ponytail-review/SKILL.md` — Quality review of changes/diffs (bugs, security, scale, missing tests, lean)
+  - `ponytail-audit/SKILL.md` — Repository-wide audit ranked by impact
+  - `ponytail-debt/SKILL.md` — Track and list `shortcut:` debt comments into a ledger
+  - `ponytail-gain/SKILL.md` — Benchmark impact & savings scoreboard
+  - `ponytail-help/SKILL.md` — Quick reference guide and cheat sheet
+- **Usage for this project:**
+  - Enforce minimalist, zero-bloat static web development (HTML5/CSS3/Vanilla JS)
+  - Prevent accidental dependency bloat, over-engineered wrappers, or speculative features
+  - Keep the shortest working diff with thorough edge-case and accessibility awareness
+
+### 🕸️ Graphify (Graphify-Labs)
+- **Path:** `.gemini/skills/graphify/` (also mirrored in `.agents/skills/graphify/`)
+- **Purpose:** Turns the codebase, HTML structure, scripts, styles, and docs into a navigable knowledge graph with Leiden community detection, AST parsing, and visual exploration.
+- **Outputs:** `graphify-out/graph.html` (interactive D3 graph), `graphify-out/GRAPH_TREE.html` (hierarchical tree), `graphify-out/graph.json` (GraphRAG dataset), and `graphify-out/GRAPH_REPORT.md` (audit report).
+- **Usage for this project:**
+  - Map relationships across static HTML pages, UI scripts, styles, and hospital metadata
+  - Run architecture queries (`graphify query "<question>"`) and explore code paths
+
+
 ---
 
 ## Design Principles for This Project
